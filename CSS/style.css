@@ -7,7 +7,7 @@
   --aqua: #86fbfb;
   --white: #f7f8fa;
   --font-size: 1.3rem;
-  --mono: 'Oxygen mono', monospace;
+  --mono: 'Oxygen Mono', monospace;
   --sans: Oxygen, sans-serif;
 }
 
@@ -17,7 +17,7 @@ html {
 
 *,
 *::before,
-::after {
+*::after {
   box-sizing: inherit;
 }
 body {
@@ -34,9 +34,17 @@ h2,
 h3 {
   margin: 0;
 }
+a {
+  color: var(--magenta);
+}
+
+a:hover {
+  color: var(--hotmag);
+  text-decoration: none;
+}
 
 #intro {
-  padding-bottom: 1rem;
+  padding-bottom: 10rem;
 }
 
 #intro p {
@@ -59,4 +67,15 @@ h3 {
 
 #intro h2 {
   font-size: 4rem;
+}
+
+#contact {
+  text-align: center;
+  margin: 0 auto;
+  width: 400px;
+  padding: 3rem 0;
+}
+
+#contact p:last-child {
+  margin-top: 3rem;
 }
