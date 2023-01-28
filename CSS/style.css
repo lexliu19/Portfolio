@@ -79,3 +79,48 @@ a:hover {
 #contact p:last-child {
   margin-top: 3rem;
 }
+
+nav {
+  font-family: var(--mono);
+  font-size: 80%;
+  padding: 1rem;
+}
+
+nav h1 a {
+  font-family: var(--sans);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+nav h1 [class*='fa-'] {
+  font-size: 100%;
+  color: var(--aqua);
+}
+/* attribute selctor */
+nav [class*='fa-'] {
+  font-size: 150%;
+  color: var(--aqua);
+}
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  display: block;
+}
+nav a:hover,
+nav [class*='fa-']:hover {
+  color: var(--magenta);
+}
