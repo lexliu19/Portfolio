@@ -44,7 +44,9 @@ a:hover {
 }
 
 #intro {
-  padding-bottom: 10rem;
+  padding-bottom: 4rem 1rem 10rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #intro p {
@@ -67,6 +69,15 @@ a:hover {
 
 #intro h2 {
   font-size: 4rem;
+}
+
+/* background color div */
+.section-plum {
+  background-color: var(--plum);
+}
+.gradient {
+  height: 2px;
+  background: linear-gradient(90deg, rgba(4, 0, 79, 1) 11%, rgba(218, 0, 255, 1) 100%);
 }
 
 #contact {
@@ -123,4 +134,48 @@ nav a {
 nav a:hover,
 nav [class*='fa-']:hover {
   color: var(--magenta);
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--magenta);
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-family: var(--mono);
+  text-decoration: none;
+  color: var(--white);
+}
+
+.button:hover {
+  background-color: var(--hotmag);
+  color: var(--white);
+}
+
+footer {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 3rem;
+}
+
+@media (min-width: 850px) {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
 }
