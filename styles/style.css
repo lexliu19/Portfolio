@@ -1,6 +1,6 @@
 :root {
   --black: #171321;
-  --dkblue: #0d314b;
+  --dkblue: #12214b;
   --plum: #351e33;
   --hotmag: #871670;
   --orange: #f39849;
@@ -108,10 +108,11 @@ a:hover {
 /* contact section */
 
 #contact {
-  width: 400px;
+  width: 20rem;
   text-align: center;
   margin: 0 auto;
   padding: 4rem 0;
+  font-size: 1.2rem;
 }
 
 #contact p:last-child {
@@ -213,6 +214,9 @@ nav [class*='fa-']:hover {
   line-height: 1.5;
 }
 
+.blackbox span {
+  color: var(--aqua);
+}
 #projects ul {
   list-style-type: none;
   padding: 0;
@@ -295,5 +299,8 @@ footer ul {
     flex-basis: auto;
     text-align: left;
     margin-right: auto;
+  }
+  #contact {
+    width: 50rem;
   }
 }
